@@ -13,7 +13,7 @@ public class fibonacci {
 	public static long fibonacci(int K){
 		
 		//base case
-		int array[] = new int[K + 1];
+		long array[] = new long[K + 1];
 		if(K <= 0) return 0;
 		array[1] = 1;
 			for(int i = 2; i< K+1; i ++){
