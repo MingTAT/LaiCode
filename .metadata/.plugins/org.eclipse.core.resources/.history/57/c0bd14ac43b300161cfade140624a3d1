@@ -1,0 +1,32 @@
+package Lesson2;
+
+public class search {
+
+	
+	//given a integer dictionary A of unknown size, where the numbers in the dictionary
+	//are sorted in ascending order, determine if a given target integer T is in the dic
+	//return the index of T in A, return -1 if T is not in A.
+	public static int search(Dictionary dict, int target){
+		
+		int left = 0;
+		int right = 1;
+		while(dict.get(right) != null){
+			right = right * 2;
+		}if(dict.get(right) >= target){
+			left = right / 2;
+			right = right;
+		}
+		while(left <= right){
+			int mid = left + (right - left) / 2;
+			if(dict.get(mid) == target){
+				return mid;
+			}else if(dict.get(mid) <= target){
+				left = mid + 1;
+			}else 
+				right = mid - 1;
+		}
+		return -1;
+		
+		
+	}
+}
