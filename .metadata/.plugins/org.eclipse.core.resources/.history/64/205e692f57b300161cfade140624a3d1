@@ -1,0 +1,33 @@
+package Lesson3;
+
+public class queueByTwoStacks {
+
+	//implement a queue by using two stacks. The queue should provide size(), isEmpty()
+	//offer() poll() and peek() operations, when the queue is empty. poll() and peek()
+	//should return null
+	public Solution(){
+
+	}
+	
+	public Integer poll(){
+		if(isEmpty() == true)return null;
+		return null;
+	}
+	
+	public void offer(int element){
+		
+	}
+	
+	public Integer peek(){
+		if(isEmpty() == true)return null;
+		return null;
+	}
+	
+	public int size(){
+		return 0;
+	}
+	
+	public boolean isEmpty(){
+		return false;
+	}
+}

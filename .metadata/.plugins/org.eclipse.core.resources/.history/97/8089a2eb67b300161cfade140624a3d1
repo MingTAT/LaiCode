@@ -1,0 +1,10 @@
+package Lesson3;
+
+public class reverseLinkedList {
+
+	
+	//revers a singly-linked list
+	public ListNode reverse(ListNode head){
+		
+	}
+}
